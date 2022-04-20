@@ -13,101 +13,134 @@
     <!-- Header -->
 
     <header>
-      <img src="images/logo/Booki.png" alt="Booki" />
+      <div class="logo-home">
+        <a href="#">
+          <img src="images/logo/Booki.png" alt="Booki" />
+        </a>
+      </div>
       <nav>
         <a class="nav-link" href="#">Hébergements</a>
         <a class="nav-link" href="#">Activités</a>
       </nav>
     </header>
 
-    <!-- Section rechercher -->
-
-    <div class="search-box">
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre ville ou en pleine nature</p>
-      <form action="/search.php" method="get">
-        <i class="fa-solid fa-location-dot"></i>
-        <input
-          type="text"
-          placeholder="Choisir une ville"
-          name="location"
-          id="location"
-        />
-        <button form="" type="submit">Rechercher</button>
-        <div class="filter-container">
-          <h6>Filtres</h6>
-          <ul>
-            <li><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
-            <li><i class="fa-solid fa-child-reaching"></i>Familial</li>
-            <li><i class="fa-solid fa-heart"></i>Romantique</li>
-            <li><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
-          </ul>
-        </div>
-      </form>
-      <div class="result-info">
-        <i class="fa-solid fa-info"></i>
-        <p>Plus de 500 logments sont dans cette ville</p>
-      </div>
-    </div>
-
-    <!-- Résultat recherche -->
-
     <main>
-      <section class="housing">
-        <h2>Hébergements à Marseille</h2>
-        <article class="fiche1">
-            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-            <h3>Auberge La Cannebière</h3>
-            <p>Nuit a partir de <strong>25€</strong></p>
-            <img src="">
-        </article>
-        <article class="fiche1"></article>
-            <img src="">
-            <h3>Hôtel du port</h3>
-            <p>Nuit a partir de <strong>52€</strong></p>
-            <img src="">
-        <article class="fiche1"></article>
-            <img src="">
-            <h3>Hôtel Les mouettes</h3>
-            <p>Nuit a partir de <strong>76€</strong></p>
-            <img src="">
-        <article class="fiche1"></article>
-            <img src="">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit a partir de <strong>46€</strong></p>
-            <img src="">
-        <article class="fiche1"></article>
-            <img src="">
-            <h3>Auberge Le Panier</h3>
-            <p>Nuit a partir de <strong>23€</strong></p>
-            <img src="">
-        <article class="fiche1"></article>
-            <img src="">
-            <h3>Hôtel chez Amira</h3>
-            <p>Nuit a partir de <strong>96€</strong></p>
-            <img src="">
-        <a href="#" class="more">Afficher plus</a>
-      </section>
+      <!-- Section rechercher -->
 
-      <section class="popularity">
-        <div>
-          <h2>Les Plus populaires</h2>
-          <i class="fa-regular fa-chart-line-up"></i>
+      <div class="search-box">
+        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="search-bar">
+          <i class="fa-solid fa-location-dot"></i>
+          <input
+            type="text"
+            placeholder="Choisir une ville"
+            name="location"
+            id="location"
+          />
         </div>
-        <article class="fiche2"></article>
-        <article class="fiche2"></article>
-        <article class="fiche2"></article>
-      </section>
+        <div class="filter">
+          <input type="submit" value="Rechercher"></input>
+          <div class="filter-container">
+            <h6>Filtres</h6>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Economique</a></li>
+              <li><a href="#"><i class="fa-solid fa-child-reaching"></i>Familial</a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i>Romantique</a></li>
+              <li><a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="result-info">
+          <i class="fa-solid fa-info"></i>
+          <p>Plus de 500 logments sont dans cette ville</p>
+        </div>
+      </div>
+
+      <!-- Résultat recherche -->
+
+      <div class="container_housing">
+        <section class="housing">
+          <h2 class="title">Hébergements à Marseille</h2>
+            <div class="housing-result">
+              <article class="fiche1">
+                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
+                <div>
+                  <h3>Auberge La Cannebière</h3>
+                  <p>Nuit a partir de <strong>25€</strong></p>
+                  <img src="" />
+                </div>
+              </article>
+              
+              <article class="fiche1">
+              <img src="" />
+                <div>
+                  <h3>Hôtel du port</h3>
+                  <p>Nuit a partir de <strong>52€</strong></p>
+                  <img src="" />
+                </div>
+              </article>
+              
+              <article class="fiche1">
+              <img src="" />
+                <div>
+                  <h3>Hôtel Les mouettes</h3>
+                  <p>Nuit a partir de <strong>76€</strong></p>
+                  <img src="" />
+                </div>
+              </article>
+              
+              <article class="fiche1">
+              <img src="" />
+                <div>
+                  <h3>Hôtel de la mer</h3>
+                  <p>Nuit a partir de <strong>46€</strong></p>
+                  <img src="" />
+                </div>
+              </article>
+              
+              <article class="fiche1">
+              <img src="" />
+                <div>
+                  <h3>Auberge Le Panier</h3>
+                  <p>Nuit a partir de <strong>23€</strong></p>
+                  <img src="" />
+                </div>
+              </article>
+              
+              <article class="fiche1">
+              <img src="" />
+                <div>
+                  <h3>Hôtel chez Amira</h3>
+                  <p>Nuit a partir de <strong>96€</strong></p>
+                  <img src="" />
+                </div>
+              </article>
+            </div>
+
+          <a href="#" class="more">Afficher plus</a>
+        </section>
+        
+        <section class="popularity">
+          <div>
+            <h2>Les Plus populaires</h2>
+            <i class="fa-regular fa-chart-line-up"></i>
+          </div>
+          <article class="fiche2"></article>
+          <article class="fiche2"></article>
+          <article class="fiche2"></article>
+        </section>
+      </div>
+
+      <!-- Activités suggérées -->
+
+      <div class="activity-container">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+      </div>
     </main>
-
-    <!-- Activités suggérées -->
-
-    <div class="activity-container">
-      <div class="p1"></div>
-      <div class="p2"></div>
-      <div class="p3"></div>
-      <div class="p4"></div>
-    </div>
 
     <!-- Pied de page -->
 
