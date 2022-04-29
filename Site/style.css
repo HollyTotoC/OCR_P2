@@ -2,6 +2,10 @@
 #0065FC bleu
 #DEEBFF bleu clair
 #F2F2F2 gris fond
+
+
+ ajouter display block sur le a de logo home
+ Au passage de la souris la nav class nav-bar:hover
 */
 
 /* Général */
@@ -57,6 +61,9 @@ header {
 
 #logo-home {
     width: 90px;
+}
+
+header div a {
     padding: 30px;
 }
 
@@ -235,6 +242,7 @@ nav {
 }
 
 .tag1 {
+    
     background-color: #ffffff;
     padding: 10px;
     color: #000000;
