@@ -1,10 +1,25 @@
+/* Charte couleur:
+#0065FC bleu
+#DEEBFF bleu clair
+#F2F2F2 gris fond
+*/
+
 /* Général */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    border:1px solid blue;
+    }
+
 body {
     font-family: 'Raleway';
-    padding: 20px;
+    font-size: 14px;
 }
 
 ul {
@@ -16,26 +31,108 @@ img {
     max-height:100%;  
 }
 
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
 /* Header */
 
 header {
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    align-items: stretch;
 }
 
 #logo-home {
     width: 90px;
+    padding: 30px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
 
+.nav-link {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: gray;
+}
+
+#hebergement {
+    border-top: 2px solid #0065FC;
+    padding : 40px;
+    color: #0065FC;
+}
+
+.search-text p {
+    margin-top: 8px;
+    font-size: 16px;
+}
 
 /* Section Recherche */
 
+
+#search-box {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .search-bar {
+    width: 450px;
+    height: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
+    margin-top: 20px;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+.search-bar #location {
+    border: 0px;
+    width: 70%;
+    height: 100%;
+}
+
+.search-bar #search-btn {
+    border: 0px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search-bar i {
+    padding: 20px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#filter {
+    margin-top: 30px;
 }
 
 .filter-container {
@@ -46,18 +143,34 @@ header {
     gap: 15px;
 }
 
+.filter-container h6, .filter-container li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .filter-item {
+    border: 3px solid #F2F2F2;
+    border-radius: 40px;
+    padding: 15px;
 
 }
 
 #result-info {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    font-size: 16px;
 }
 
+/*  */
 
+#container_housing {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 #housing-result {
     display: flex;
@@ -78,4 +191,40 @@ header {
     background-color: #ffffff;
     padding: 5px;
     color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Footer **/
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+}
+
+footer h4 {
+    padding-bottom: 15px;
+    margin-right : 300px;
+}
+
+footer li {
+    margin-bottom: 10px;
 }

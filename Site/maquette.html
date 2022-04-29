@@ -11,6 +11,15 @@
     <title>Booki</title>
   </head>
   <body>
+
+<!-- 
+  <style>
+     body {
+      background-image: url('images\Desktop - 1.png');
+     }
+  </style> 
+-->
+
     <!-- Header -->
 
     <header>
@@ -21,31 +30,33 @@
       </div>
 
       <nav>
-        <a class="nav-link" href="#">Hébergements</a>
-        <a class="nav-link" href="#">Activités</a>
+        <a id="hebergement" href="#">Hébergements</a>
+        <a class="nav-link" href="#activity-container">Activités</a>
       </nav>
     </header>
 
     <main>
       <!-- Section rechercher -->
 
-      <section class="search-box">
+      <section id="search-box">
         
-        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        
+        <div class="search-text">
+          <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
         <div class="search-bar">
-          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-location-dot fa-lg"></i>
           <input
             type="text"
             placeholder="Choisir une ville"
             name="location"
             id="location"
           />
-          <input type="submit" value="Rechercher"></input>
+          <input type="submit" value="Rechercher" id="search-btn" /></input>
         </div>
 
-        <div class="filter">
+        <div id="filter">
           <div class="filter-container">
             <h6>Filtres</h6>
             <ul class="filter-container">
@@ -59,14 +70,14 @@
 
         <div id="result-info">
           <i class="fa-solid fa-info"></i>
-          <p>Plus de 500 logements sont dans cette ville</p>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
       </section>
 
       <!-- Résultat recherche -->
 
-      <div class="container_housing">
+      <div id="container_housing">
         <section class="housing">
           <h2 class="title">Hébergements à Marseille</h2>
             <div id="housing-result">
@@ -153,7 +164,7 @@
 
       <!-- Activités suggérées -->
 
-      <div class="activity-container">
+      <div id="activity-container">
         <div class="p1"></div>
         <div class="p2"></div>
         <div class="p3"></div>
