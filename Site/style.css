@@ -43,9 +43,9 @@ a, a:visited, a:hover, a:active {
 }
 
 header, #search-box, #container_housing, #activity-container {
-    margin-left: 50px;
-    margin-right: 50px;
-}
+    border: 1px solid red;
+    margin: 0 50px;
+    }
 
 /* Header */
 
@@ -188,7 +188,6 @@ nav {
 /* Housing Général */
 
 #container_housing {
-    margin-right: 30px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
