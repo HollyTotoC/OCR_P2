@@ -5,7 +5,6 @@
 
 
  ajouter display block sur le a de logo home
- Au passage de la souris la nav class nav-bar:hover
 */
 
 /* Général */
@@ -35,6 +34,7 @@ img {
     max-height:100%;  
 }
 
+
 a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
@@ -46,7 +46,7 @@ a, a:visited, a:hover, a:active {
 
 }
 
-header, #search-box, #container_housing, #activity-container {
+header, #search-box, #container_housing, #container_activity {
     border: 1px solid red;
     margin: 0 50px;
     }
@@ -57,6 +57,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+}
+
+header a {
+    display: block;
 }
 
 #logo-home {
@@ -76,14 +80,12 @@ nav {
 .nav-link {
     display: flex;
     align-items: center;
-    margin-right: 30px;
-    margin-left: 30px;
     color: gray;
+    padding: 30px;
 }
 
-#hebergement {
+.nav-link:hover {
     border-top: 2px solid #0065FC;
-    padding : 40px;
     color: #0065FC;
 }
 
@@ -142,7 +144,7 @@ nav {
 .filter-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
 }
@@ -192,27 +194,32 @@ nav {
     border-radius: 30px;
 }
 
+
+
 /* Housing Général */
 
 #container_housing {
-    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
 }
+
+
 
 /* Housing Marseille*/
 
 #housing {
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 70%;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:flex-start;
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 #housing .title {
@@ -224,19 +231,20 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .fiche1 {
     padding: 5px;
     background-color: white;
     border-radius: 25px;
+    filter: drop-shadow(10px 10px 10px #cfcece)
 }
 
 .fiche1 .view {
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px; 
-    width: 250px;
+    width: 230px;
     height: 110px;
     object-fit: cover;
 }
@@ -248,31 +256,133 @@ nav {
     color: #000000;
 }
 
+.tag1 h3, .tag1 p {
+    margin-bottom: 5px;
+}
+
+#more {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 
 /* Housing Popularity*/    
 
 #popularity { 
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 30%;
     height: 100%;
-    padding: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items:flex-start;
 }
 
 
+#popularity .pt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popularity .pt i {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fiche2 {
+    margin-top: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    filter: drop-shadow(10px 10px 10px #cfcece)
+}
+
+.fiche2 a {
+    display: flex;
+    flex-direction: row;
+}
+
+.fiche2 .view {
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.tag2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000000;
+}
+
+.tag2 h3, .tag2 p {
+    margin-bottom: 5px;
+}
+
+/*
+.tag2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+*/
 
 
+/** Activty Marseille **/
 
+#container_activity {
+    padding-top: 50px;
+}
 
+#container_activity .part {
+    border-top: 1px solid brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.fiche3, .fiche4 {
+    border: solid 1px blue;
+    border-radius: 25px;
+    overflow: hidden;
+    filter: drop-shadow(10px 10px 10px #cfcece)
+}
 
+.tag3, .tag4 {
+    background-color: #ffffff;
+    padding: 15px;
+    color: #000000;
+}
 
+.fiche3 a, .fiche4 a {
+    border-top: 10px solid purple;
+    display: flex;
+    flex-direction: column;
+}
 
+.fiche3 .view {
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
+}
 
+.fiche4 .view {
+    width: 300px;
+    height: 190px;
+    object-fit: cover;
+}
 
 
 
@@ -284,12 +394,17 @@ footer {
     display: flex;
     align-items: flex-start;
     background-color: #F2F2F2;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    gap: 30px;
 }
 
 footer h4 {
     padding-bottom: 15px;
     margin-right : 300px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 footer li {
