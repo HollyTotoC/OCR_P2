@@ -203,6 +203,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    height: 100%;
 }
 
 
@@ -215,6 +216,7 @@ nav {
     width: 70%;
     padding-top: 40px;
     padding-left: 40px;
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -235,6 +237,7 @@ nav {
 }
 
 .fiche1 {
+    width: 30%;
     padding: 5px;
     background-color: white;
     border-radius: 25px;
@@ -243,15 +246,13 @@ nav {
 
 .fiche1 .view {
     border-top-left-radius: 20px; 
-    border-top-right-radius: 20px; 
-    width: 230px;
-    height: 110px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    aspect-ratio: 19 / 9;
     object-fit: cover;
 }
 
 .tag1 {
-    
-    background-color: #ffffff;
     padding: 10px;
     color: #000000;
 }
@@ -271,6 +272,7 @@ nav {
 /* Housing Popularity*/    
 
 #popularity { 
+    border: 1px solid red;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 30%;
@@ -286,7 +288,6 @@ nav {
 
 
 #popularity .pt {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -402,8 +403,6 @@ nav {
     height: 150px;
     object-fit: cover;
 }
-
-
 
 
 /** Footer **/
