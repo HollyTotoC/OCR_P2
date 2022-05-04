@@ -47,7 +47,7 @@ a, a:visited, a:hover, a:active {
 }
 
 header, #search-box, #container_housing, #container_activity {
-    border: 1px solid red;
+
     margin: 0 50px;
     }
 
@@ -238,7 +238,7 @@ nav {
     padding: 5px;
     background-color: white;
     border-radius: 25px;
-    filter: drop-shadow(10px 10px 10px #cfcece)
+    filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
 .fiche1 .view {
@@ -303,7 +303,7 @@ nav {
     padding: 5px;
     background-color: white;
     border-radius: 25px;
-    filter: drop-shadow(10px 10px 10px #cfcece)
+    filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
 .fiche2 a {
@@ -344,20 +344,28 @@ nav {
 
 #container_activity {
     padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+#container_activity .box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 #container_activity .part {
-    border-top: 1px solid brown;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
-.fiche3, .fiche4 {
-    border: solid 1px blue;
+.fiche3, .fiche4, .fiche5, .fiche6 {
     border-radius: 25px;
     overflow: hidden;
-    filter: drop-shadow(10px 10px 10px #cfcece)
+    filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
 .tag3, .tag4 {
@@ -367,23 +375,33 @@ nav {
 }
 
 .fiche3 a, .fiche4 a {
-    border-top: 10px solid purple;
     display: flex;
     flex-direction: column;
 }
 
 .fiche3 .view {
-    width: 300px;
+    width: 290px;
     height: 380px;
     object-fit: cover;
 }
 
 .fiche4 .view {
     width: 300px;
-    height: 190px;
+    height: 200px;
     object-fit: cover;
 }
 
+.fiche5 .view {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.fiche6 .view {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
 
 
 
