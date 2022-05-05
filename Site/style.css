@@ -356,7 +356,6 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    color: #000000;
     width: 60%;
 }
 
@@ -594,12 +593,6 @@ footer li {
 
     #popularity .pt {
         font-size: 250%;
-    }
-
-
-
-    #housing-result {
-
     }
 
     .fiche1, .fiche2 {
