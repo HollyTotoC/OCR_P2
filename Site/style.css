@@ -1,10 +1,8 @@
-/* Charte couleur:
+/* 
+Charte couleur:
 #0065FC bleu
 #DEEBFF bleu clair
 #F2F2F2 gris fond
-
-
- ajouter display block sur le a de logo home
 */
 
 /* Général */
@@ -14,15 +12,18 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
+/*
 html {
     border:1px solid blue;
     }
+*/
+
 
 body {
     font-family: 'Raleway';
-    font-size: 20px;
+    font-size: 14px;
 }
 
 ul {
@@ -40,23 +41,29 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+.fiche1 a, .fiche2 a, .fiche3 a, .fiche4 a, .fiche5 a, .fiche6 a, .fiche7 a {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
 .star {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .title {
-    font-size: 30px;
+    font-size: 19px;
     font-weight: bold;
     
 }
 
 header, #search-box, #container_housing, #container_activity {
-    margin: 0 50px;
-    }
+    margin: 0 40px;
+}
 
 /* Header */
 
@@ -66,15 +73,12 @@ header {
     align-items: stretch;
 }
 
-header a {
-    display: block;
-}
-
 #logo-home {
-    width: 70%;
+    width: 40%;
 }
 
 header div a {
+    display: block;
     padding: 30px;
 }
 
@@ -88,7 +92,7 @@ nav {
     display: flex;
     align-items: center;
     color: gray;
-    padding: 30px;
+    padding: 25px;
 }
 
 .nav-link:hover {
@@ -101,12 +105,12 @@ nav {
 
 .search-text p {
     margin-top: 8px;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 .search-bar {
-    width: 31%;
-    height: 70px;
+    width: 35%;
+    height: 45px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,39 +123,39 @@ nav {
 
 .search-bar #location {
     border: 0px;
-    width: 70%;
+    width: 80%;
     height: 100%;
     padding-left: 20px;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .search-bar #search-btn {
     border: 0px;
     background-color: #0065FC;
     color: white;
-    font-size: 23px;
+    font-size: 16px;
     font-weight: bold;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .search-bar i {
-    font-size: 26px;
-    padding: 22px;
+    font-size: 18px;
+    padding: 12px;
 }
 
 #location {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 /* Filter */
 
 #filter {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .filter-container {
@@ -159,11 +163,11 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 35px;
+    gap: 22px;
 }
 
 .filter-container h6, .filter-container li {
-    font-size: 25px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -174,19 +178,12 @@ nav {
     border-top: 4px solid #F2F2F2;
     border-bottom: 4px solid #F2F2F2;
     border-right: 4px solid #F2F2F2;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 15px;
 }
 
-.filter-item a:hover { 
-    border-radius: 40px;
-    border-top: 4px solid #F2F2F2;
-    border-bottom: 4px solid #F2F2F2;
-    border-right: 4px solid #F2F2F2;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 30px;
+.filter-item a:hover {
     background-color: #F2F2F2;
     filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
@@ -194,14 +191,14 @@ nav {
 .filter-item i {
     background-color: #DEEBFF;
     border-radius: 40px;
-    padding: 20px;
+    padding: 15px;
     color: #0065FC;
     margin-right: 15px;
 }
 
 #result-info {
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -224,7 +221,6 @@ nav {
 /* Housing Général */
 
 #container_housing {
-    border: 3px dotted blue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -234,42 +230,44 @@ nav {
 #housing, #popularity {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 
 /* Housing Marseille*/
 
 #housing {
-    border: 1px solid green;
     width: 70%;
     flex-direction: column;
     margin-right: 3%;
     gap: 20px;
-}
 
+}
 
 #housing-result {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .fiche1 {
-    width: 30%;
+    flex-grow: 1;
+    width: 29%;
     padding: 5px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
+    overflow: hidden;
     filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
+
 .fiche1 .view {
-    border-top-left-radius: 20px; 
-    border-top-right-radius: 20px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
     aspect-ratio: 19 / 9;
     object-fit: cover;
 }
@@ -279,23 +277,24 @@ nav {
     color: #000000;
 }
 
-.tag1 h3, .tag1 p {
+.tag1 h3, .tag1 p, .tag2 h3, .tag2 p {
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
 #more {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 
 /* Housing Popularity*/    
 
 #popularity { 
-    border: 1px solid red;
     width: 30%;
     flex-direction: column;
+    gap: 20px;
 }
 
 
@@ -308,28 +307,36 @@ nav {
 
 #popularity .pt i {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 19px;
+}
+
+#ficheb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
 }
 
 .fiche2 {
-    margin-top: 30px;
-    padding: 6px;
+    padding: 5px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
+    overflow: hidden;
     filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
 .fiche2 a {
-    width: 100%;
-    display: flex;
     flex-direction: row;
 }
 
 .fiche2 .view {
-    border-top-left-radius: 20px; 
-    border-bottom-left-radius: 20px; 
-    width: 35%;
+    display: flex;
+    flex-shrink: 1;
+    border-top-left-radius: 12px; 
+    border-bottom-left-radius: 12px; 
     aspect-ratio: 17/19;
+    width: 40%;
+
     object-fit: cover;
 }
 
@@ -337,55 +344,55 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     color: #000000;
 }
-
-.tag2 h3, .tag2 p {
-    margin-bottom: 5px;
-}
-
 
 
 
 /** Activty Marseille **/
 
 #container_activity {
-    border: 1px dotted red;
     padding-top: 50px;
     padding-bottom: 40px;
 }
 
 #container_activity .box {
-    border: 2px dotted blue;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    gap: 30px;
 }
 
 #container_activity .part {
-    width: 23%;
-    height: 100%;
-    border: 2px dotted green;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: stretch;
+    flex-grow: 1;
 }
 
-.fiche3, .fiche4, .fiche5, .fiche6 {
-    height: 100%;
-    border-radius: 25px;
-    overflow: hidden;
-    filter: drop-shadow(5px 10px 10px #e4e3e3)
+.part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-.tag3, .tag4 {
+.fiche3, .fiche4, .fiche5, .fiche6, .fiche7 {
+    border-radius: 15px;
+    filter: drop-shadow(5px 10px 10px #e4e3e3);
+}
+
+.tag3 {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     background-color: #ffffff;
-    padding: 25px;
+    padding: 15px;
     color: #000000;
+    font-size: 12px;
 }
 
 .fiche3 a, .fiche4 a {
@@ -393,31 +400,35 @@ nav {
     flex-direction: column;
 }
 
-.fiche3 .view {
-    aspect-ratio: 41/50;
+.fiche3 .view, .fiche4 .view, .fiche5 .view, .fiche6 .view, .fiche7 .view {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-position: center 45%;
     object-fit: cover;
 }
 
+.fiche3 .view {
+    aspect-ratio: 16/19;
+}
+
 .fiche4 .view {
-    aspect-ratio: 16/9;
+    aspect-ratio: 14/9;
     object-fit: cover;
 }
 
 .fiche5 .view {
-    aspect-ratio: 27/9;
+    aspect-ratio: 19/6;
     object-fit: cover;
 }
 
 .fiche6 .view {
-    aspect-ratio: 20/9;
+    aspect-ratio: 17/9;
     object-fit: cover;
 }
 
-.part2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
+.fiche7 .view {
+    aspect-ratio: 18/25;
+    object-fit: cover;
 }
 
 
@@ -427,19 +438,21 @@ footer {
     display: flex;
     align-items: flex-start;
     background-color: #F2F2F2;
-    padding-top: 40px;
-    padding-left: 50px;
-    padding-bottom: 40px;
-    gap: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    gap: 20px;
 }
 
 footer h4 {
-    padding-bottom: 25px;
+    min-width: 100%;
+    padding-bottom: 15px;
     margin-right : 300px;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 footer li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
