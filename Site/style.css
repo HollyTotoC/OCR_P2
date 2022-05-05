@@ -14,16 +14,12 @@ Charte couleur:
     padding: 0;
 }
 
-/*
+
 html {
-    border:1px solid blue;
-    }
-*/
-
-
-body {
+    border: 1px solid red;
+    max-width: 100%;
     font-family: 'Raleway';
-    font-size: 14px;
+    font-size: 12px;
 }
 
 ul {
@@ -35,14 +31,13 @@ img {
     max-height:100%;  
 }
 
-
 a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
 
 .fiche1 a, .fiche2 a, .fiche3 a, .fiche4 a, .fiche5 a, .fiche6 a, .fiche7 a {
-    border-radius: 15px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -52,13 +47,12 @@ a, a:visited, a:hover, a:active {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 75%;
 }
 
 .title {
-    font-size: 19px;
+    font-size: 160%;
     font-weight: bold;
-    
 }
 
 header, #search-box, #container_housing, #container_activity {
@@ -73,13 +67,15 @@ header {
     align-items: stretch;
 }
 
-#logo-home {
+#logo-home img {
+    display: flex;
+    justify-content: center;
     width: 40%;
 }
 
 header div a {
     display: block;
-    padding: 30px;
+    padding: 20px;
 }
 
 nav {
@@ -93,6 +89,7 @@ nav {
     align-items: center;
     color: gray;
     padding: 25px;
+    font-size: 100%;
 }
 
 .nav-link:hover {
@@ -104,58 +101,66 @@ nav {
 /* Section Recherche */
 
 .search-text p {
-    margin-top: 8px;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 120%;
 }
 
 .search-bar {
-    width: 35%;
-    height: 45px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: nowrap;
+    width: 360px;
+    height: 40px;
     margin-top: 20px;
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
 
-.search-bar #location {
-    border: 0px;
-    width: 80%;
-    height: 100%;
-    padding-left: 20px;
-    font-size: 16px;
+.search-bar i {
+    display: flex;
+    align-items: center;
 }
 
-.search-bar #search-btn {
+#search-btn i {
+    font-size: 0%;
+    border: 2px solid red;
+}
+
+#location {
+    border: 0px;
+    width: 80%;
+    padding-left: 20px;
+    font-size: 120%;
+}
+
+#search-btn {
+    display: flex;
+    align-items: center;
     border: 0px;
     background-color: #0065FC;
     color: white;
-    font-size: 16px;
+    font-size: 120%;
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
-    height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .search-bar i {
-    font-size: 18px;
+    font-size: 125%;
     padding: 12px;
 }
 
 #location {
     font-weight: bold;
-    font-size: 12px;
 }
 
 /* Filter */
 
 #filter {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .filter-container {
@@ -167,20 +172,22 @@ nav {
 }
 
 .filter-container h6, .filter-container li {
-    font-size: 14px;
+    font-size: 125%;
     font-weight: bold;
 }
 
-
+.filter-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 16px;
+}
 
 .filter-item a {
-    border-radius: 40px;
+    border-radius: 80px;
     border-top: 4px solid #F2F2F2;
     border-bottom: 4px solid #F2F2F2;
     border-right: 4px solid #F2F2F2;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 15px;
 }
 
 .filter-item a:hover {
@@ -190,14 +197,14 @@ nav {
 
 .filter-item i {
     background-color: #DEEBFF;
-    border-radius: 40px;
-    padding: 15px;
+    border-radius: 50%;
+    padding: 13px;
     color: #0065FC;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 #result-info {
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -254,9 +261,9 @@ nav {
     gap: 20px;
 }
 
-.fiche1 {
+.fiche1, .fiche2 {
+    display: flex;
     flex-grow: 1;
-    width: 29%;
     padding: 5px;
     background-color: white;
     border-radius: 15px;
@@ -264,6 +271,9 @@ nav {
     filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
+.fiche1 {
+    width: 25%;
+}
 
 .fiche1 .view {
     border-top-left-radius: 13px;
@@ -277,15 +287,20 @@ nav {
     color: #000000;
 }
 
-.tag1 h3, .tag1 p, .tag2 h3, .tag2 p {
+.tag1 h3, .tag1 p, .tag2 p {
     margin-bottom: 5px;
-    font-size: 13px;
+    font-size: 100%;
+}
+
+.tag2 h3 {
+    font-size: 110%;
+    padding-bottom: 5px;
 }
 
 #more {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 130%;
 }
 
 
@@ -307,22 +322,19 @@ nav {
 
 #popularity .pt i {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 125%;
 }
 
 #ficheb {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    align-items: stretch;
     gap: 20px;
 }
 
 .fiche2 {
-    padding: 5px;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    filter: drop-shadow(5px 10px 10px #e4e3e3)
+    height: 33;3%;
 }
 
 .fiche2 a {
@@ -331,12 +343,11 @@ nav {
 
 .fiche2 .view {
     display: flex;
-    flex-shrink: 1;
+    flex-grow: 1;
     border-top-left-radius: 12px; 
     border-bottom-left-radius: 12px; 
     aspect-ratio: 17/19;
     width: 40%;
-
     object-fit: cover;
 }
 
@@ -346,6 +357,7 @@ nav {
     justify-content: space-between;
     padding: 10px;
     color: #000000;
+    width: 60%;
 }
 
 
@@ -392,7 +404,7 @@ nav {
     background-color: #ffffff;
     padding: 15px;
     color: #000000;
-    font-size: 12px;
+    font-size: 100%;
 }
 
 .fiche3 a, .fiche4 a {
@@ -413,22 +425,18 @@ nav {
 
 .fiche4 .view {
     aspect-ratio: 14/9;
-    object-fit: cover;
 }
 
 .fiche5 .view {
     aspect-ratio: 19/6;
-    object-fit: cover;
 }
 
 .fiche6 .view {
     aspect-ratio: 17/9;
-    object-fit: cover;
 }
 
 .fiche7 .view {
     aspect-ratio: 18/25;
-    object-fit: cover;
 }
 
 
@@ -448,11 +456,227 @@ footer h4 {
     min-width: 100%;
     padding-bottom: 15px;
     margin-right : 300px;
-    font-size: 14px;
+    font-size: 120%;
     font-weight: bold;
 }
 
 footer li {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 120%;
+}
+
+
+/* BREAKPOINT */
+
+@media all and (max-width: 768px)
+{
+
+    .title {
+        font-size: 400%;
+    }
+
+/* Header */
+
+    header, #search-box, #container_housing, #container_activity, #housing-result, #container_activity .box, footer {
+        margin: 0 0px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #search-box, #container_activity {
+        padding: 30px;
+    }
+
+    #logo-home {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #logo-home img{
+        width: 100%;
+    }
+    
+    .nav-link {
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 5px solid #F2F2F2;
+    }
+    
+    .nav-link:hover {
+        border-bottom: 5px solid #0065FC;
+        border-top: 0px;
+        color: #0065FC;
+    }
+    
+    nav {
+        flex-grow: 1;
+        font-size: 200%;
+    }
+
+
+    /* Search */ 
+
+    .search-text p {
+        margin-top: 20px;
+        font-size: 250%;
+    }
+
+    .search-bar {
+        margin-top: 60px;
+        width: 100%;
+        height: 90px;
+        border-radius: 30px;
+    }
+
+    #search-btn {
+        font-size: 0%;
+        border-radius: 30px;
+    }
+    
+    #search-btn i {
+        font-size: 120%;
+        color: white;
+    }
+
+    .search-bar i {
+        font-size: 250%;
+        padding: 30px;
+    }
+
+    #location {
+        font-size: 250%;
+    }
+    
+    /* Filtres */*
+
+    #filter {
+        margin-top: 60px;
+    }
+
+    .filter-container h6, .filter-container li {
+        font-size: 250%;
+    }
+
+    .filter-item i {
+        padding: 30px;
+        border-radius: 50%;
+    }
+
+    .filter-item a {
+        padding-right: 40px;
+    }
+
+    #result-info  {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        font-size: 250%;
+    }
+
+    /* Housing */
+
+    .star {
+        font-size: 220%;
+    }
+
+    #container_housing {
+        flex-direction: column-reverse;
+    }
+
+    #housing, #popularity {
+        width: auto;
+        border-radius: 0;
+    } 
+
+    #housing {
+        background-color: white;
+    }
+
+    #popularity .pt {
+        font-size: 250%;
+    }
+
+
+
+    #housing-result {
+
+    }
+
+    .fiche1, .fiche2 {
+        border-radius: 40px;
+    }
+
+    .fiche1 {
+        width: 100%;
+    }
+
+    .fiche1 .view {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        aspect-ratio: 27 / 9;
+    }
+
+    .fiche2 .view {
+        border-top-left-radius: 35px; 
+        border-bottom-left-radius: 35px; 
+    }
+
+    .tag1 h3, .tag1 p, .tag2 p {
+        margin-bottom: 10px;
+        font-size: 260%;
+    }
+
+    .tag2 h3 {
+        font-size: 300%;
+        padding-bottom: 10px;
+    }
+
+    .tag1, .tag2 {
+        padding: 30px;
+    }
+
+    #more {
+        margin-top: 30px;
+        font-size: 280%;
+    }
+
+    /* Activity */
+
+    .fiche3, .fiche4, .fiche5, .fiche6, .fiche7 {
+        border-radius: 50px;
+    }
+
+    .tag3 {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 35px;
+        font-size: 250%;
+    }
+
+    .fiche3 .view, .fiche4 .view, .fiche5 .view, .fiche6 .view, .fiche7 .view {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        aspect-ratio: 27/9;
+    }
+
+    #container_activity .part, #container_activity .part2 {
+        gap: 40px;
+    }
+
+
+    footer {
+        gap: 50px;
+    }
+
+    footer h4, footer li {
+        font-size: 250%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px)
+{
+    /* Rédigez vos propriétés CSS ici */
 }

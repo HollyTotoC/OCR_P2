@@ -15,9 +15,9 @@
     <!-- Header -->
 
     <header>
-      <div>
+      <div id="logo-home">
         <a href="#">
-          <img src="images/logo/Booki.png" alt="Booki"  id="logo-home" />
+          <img src="images\logo\Booki@3x.png" alt="Booki" />
         </a>
       </div>
 
@@ -38,14 +38,20 @@
         </div>
 
         <div class="search-bar">
-          <i class="fa-solid fa-location-dot fa-lg"></i>
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+
+
           <input
             type="text"
             placeholder="Choisir une ville"
             name="location"
             id="location"
           />
-          <input type="submit" value="Rechercher" id="search-btn" /></input>
+          
+          <button type="submit" id="search-btn">
+            Rechercher
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
 
         <div id="filter">
@@ -253,7 +259,7 @@
       <!-- Activités suggérées -->
 
       <div id="container_activity">
-        <h2>Activités à Marseille</h2>
+        <h2 class="title">Activités à Marseille</h2>
 
         <div class="box">
         
