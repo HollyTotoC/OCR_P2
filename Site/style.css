@@ -188,12 +188,14 @@ nav {
     border-top: 4px solid #F2F2F2;
     border-bottom: 4px solid #F2F2F2;
     border-right: 4px solid #F2F2F2;
+    padding-right: 20px;
 }
 
 .filter-item a:hover {
     background-color: #F2F2F2;
     filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
+
 
 .filter-item i {
     background-color: #DEEBFF;
@@ -476,7 +478,7 @@ footer li {
 
 /* Header */
 
-    header, #search-box, #container_housing, #container_activity, #housing-result, #container_activity .box, footer {
+    header, #search-box, .filter-container, #container_housing, #container_activity, #housing-result, #container_activity .box, footer {
         margin: 0 0px;
         flex-direction: column;
         justify-content: center;
@@ -551,6 +553,10 @@ footer li {
 
     #filter {
         margin-top: 60px;
+    }
+
+    .filter-container {
+        align-items: flex-start;
     }
 
     .filter-container h6, .filter-container li {
