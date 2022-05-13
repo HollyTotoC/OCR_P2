@@ -5,7 +5,11 @@ Charte couleur:
 #F2F2F2 gris fond
 */
 
-/* Général */
+/* TODO 
+
+    TODO */
+
+/*! Général !*/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -16,7 +20,6 @@ Charte couleur:
 
 
 html {
-    border: 1px solid red;
     max-width: 100%;
     font-family: 'Raleway';
     font-size: 12px;
@@ -36,6 +39,8 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+
+
 .fiche1 a, .fiche2 a, .fiche3 a, .fiche4 a, .fiche5 a, .fiche6 a, .fiche7 a {
     width: 100%;
     display: flex;
@@ -47,7 +52,7 @@ a, a:visited, a:hover, a:active {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-top: 10px;
-    font-size: 75%;
+    font-size: 100%;
 }
 
 .title {
@@ -59,7 +64,7 @@ header, #search-box, #container_housing, #container_activity {
     margin: 0 40px;
 }
 
-/* Header */
+/** Header **/
 
 header {
     display: flex;
@@ -84,12 +89,12 @@ nav {
     align-items: stretch;
 }
 
-.nav-link {
+a.nav-link {
     display: flex;
     align-items: center;
-    color: gray;
+    color: black;
     padding: 25px;
-    font-size: 100%;
+    font-size: 125%;
 }
 
 .nav-link:hover {
@@ -98,12 +103,14 @@ nav {
 }
 
 
-/* Section Recherche */
+/** Section Recherche **/
 
 .search-text p {
     margin-top: 5px;
     font-size: 120%;
 }
+
+    /* Barre de recherche */
 
 .search-bar {
     display: flex;
@@ -115,6 +122,7 @@ nav {
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .search-bar i {
@@ -122,16 +130,22 @@ nav {
     align-items: center;
 }
 
-#search-btn i {
-    font-size: 0%;
-    border: 2px solid red;
-}
-
 #location {
     border: 0px;
     width: 80%;
     padding-left: 20px;
     font-size: 120%;
+}
+
+input {
+    outline: none;
+}
+
+#glass {
+    display: none;
+    color: white;
+    font-size: 250%;
+    background-color: #0065FC;
 }
 
 #search-btn {
@@ -144,8 +158,6 @@ nav {
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 .search-bar i {
@@ -157,7 +169,7 @@ nav {
     font-weight: bold;
 }
 
-/* Filter */
+    /* Filter */
 
 #filter {
     margin-top: 20px;
@@ -185,17 +197,16 @@ nav {
 
 .filter-item a {
     border-radius: 80px;
-    border-top: 4px solid #F2F2F2;
-    border-bottom: 4px solid #F2F2F2;
-    border-right: 4px solid #F2F2F2;
+    border-top: 2px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+    border-right: 2px solid #d9d9d9;
     padding-right: 20px;
 }
 
 .filter-item a:hover {
-    background-color: #F2F2F2;
+    background-color: d9d9d9;
     filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
-
 
 .filter-item i {
     background-color: #DEEBFF;
@@ -204,6 +215,8 @@ nav {
     color: #0065FC;
     margin-right: 10px;
 }
+
+        /* Info */
 
 #result-info {
     margin-top: 25px;
@@ -218,7 +231,7 @@ nav {
 #result-info i {
     font-weight: bold;
     color: #0065FC;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #d9d9d9;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -227,7 +240,9 @@ nav {
 
 
 
-/* Housing Général */
+/** Housing **/
+
+    /* Général */
 
 #container_housing {
     display: flex;
@@ -245,8 +260,28 @@ nav {
     align-items: stretch;
 }
 
+.fiche1, .fiche2 {
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    filter: drop-shadow(5px 10px 10px #e4e3e3)
+}
 
-/* Housing Marseille*/
+.tag1 h3, .tag1 p, .tag2 p {
+    margin-bottom: 5px;
+    font-size: 100%;
+}
+
+.tag2 h3 {
+    font-size: 110%;
+    padding-bottom: 5px;
+}
+
+
+    /* Housing Marseille*/
 
 #housing {
     width: 70%;
@@ -261,16 +296,6 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-}
-
-.fiche1, .fiche2 {
-    display: flex;
-    flex-grow: 1;
-    padding: 5px;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    filter: drop-shadow(5px 10px 10px #e4e3e3)
 }
 
 .fiche1 {
@@ -289,16 +314,6 @@ nav {
     color: #000000;
 }
 
-.tag1 h3, .tag1 p, .tag2 p {
-    margin-bottom: 5px;
-    font-size: 100%;
-}
-
-.tag2 h3 {
-    font-size: 110%;
-    padding-bottom: 5px;
-}
-
 #more {
     margin-top: 10px;
     font-weight: bold;
@@ -306,7 +321,7 @@ nav {
 }
 
 
-/* Housing Popularity*/    
+    /* Housing Popularity*/    
 
 #popularity { 
     width: 30%;
@@ -336,7 +351,7 @@ nav {
 }
 
 .fiche2 {
-    height: 33;3%;
+    max-height: 33,3%;
 }
 
 .fiche2 a {
@@ -467,32 +482,45 @@ footer li {
 }
 
 
-/* BREAKPOINT */
+/*! BREAKPOINT !*/
+
+    /** PHONE **/
 
 @media all and (max-width: 768px)
 {
 
     .title {
-        font-size: 400%;
+        font-size: 340%;
+        text-shadow: 1px 0 #000000;
     }
 
-/* Header */
-
-    header, #search-box, .filter-container, #container_housing, #container_activity, #housing-result, #container_activity .box, footer {
+    
+    header, #search-box, #container_housing, #container_activity, #housing-result, #container_activity .box, footer {
         margin: 0 0px;
         flex-direction: column;
         justify-content: center;
     }
     
+    /* Header */
+
+    header {
+        margin-bottom: 25px;
+    }
+
     #search-box, #container_activity {
         padding: 30px;
     }
 
     #logo-home {
+        margin: 15px;
         display: flex;
         justify-content: center;
     }
     
+    #logo-home a {
+        width: 28%;
+    }
+
     #logo-home img{
         width: 100%;
     }
@@ -501,25 +529,26 @@ footer li {
         justify-content: center;
         width: 100%;
         padding: 20px;
-        border-bottom: 5px solid #F2F2F2;
+        border-bottom: 7px solid #F2F2F2;
     }
     
     .nav-link:hover {
-        border-bottom: 5px solid #0065FC;
+        border-bottom: 7px solid #0065FC;
         border-top: 0px;
         color: #0065FC;
     }
     
     nav {
         flex-grow: 1;
-        font-size: 200%;
+        font-size: 210%;
     }
 
 
     /* Search */ 
 
     .search-text p {
-        margin-top: 20px;
+        margin-top: 22px;
+        margin-bottom: 60px;
         font-size: 250%;
     }
 
@@ -531,57 +560,83 @@ footer li {
     }
 
     #search-btn {
-        font-size: 0%;
-        border-radius: 30px;
+        display: none;
     }
     
-    #search-btn i {
-        font-size: 120%;
-        color: white;
+    #glass {
+        border-radius: 30px;
+        display: block;
     }
 
     .search-bar i {
-        font-size: 250%;
-        padding: 30px;
+        font-size: 300%;
+        padding: 26px;
     }
 
     #location {
-        font-size: 250%;
+        font-size: 300%;
     }
     
     /* Filtres */*
 
     #filter {
-        margin-top: 60px;
+        margin-top: 45px;
     }
-
+    
     .filter-container {
         align-items: flex-start;
+        gap: 20px;
     }
-
-    .filter-container h6, .filter-container li {
-        font-size: 250%;
+    
+    .filter-container h6 {
+        font-size: 300%;
+        margin-bottom: 15px;
     }
-
+    
+    .filter-container li {
+        font-size: 270%;
+    }
+    
+    .filter-item {
+        padding-right: 0px;
+    }
+        
     .filter-item i {
-        padding: 30px;
         border-radius: 50%;
+        font-size: 120%;
+        padding : 23px;
     }
 
     .filter-item a {
-        padding-right: 40px;
+        padding-right: 30px;
+        border-top: 4px solid #d9d9d9;
+        border-bottom: 4px solid #d9d9d9;
+        border-right: 4px solid #d9d9d9;
+    
     }
 
+
     #result-info  {
-        margin-top: 50px;
-        margin-bottom: 60px;
-        font-size: 250%;
+        align-items: baseline;
+        margin-top: 60px;
+        margin-bottom: 35px;
+        font-size: 240%;
+    }
+
+    #result-info i {
+        font-weight: bold;
+        font-size: 80%;
+        padding: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 100px;
+        text-shadow: 1px 0 #0065FC;
     }
 
     /* Housing */
 
     .star {
-        font-size: 220%;
+        font-size: 170%;
     }
 
     #container_housing {
@@ -595,14 +650,26 @@ footer li {
 
     #housing {
         background-color: white;
+        margin-top: 40px;
     }
 
+    #housing h2 {
+        margin-bottom: 25px;
+    }
+
+    #popularity {
+        padding-bottom: 60px;
+    }
+    
     #popularity .pt {
-        font-size: 250%;
+        padding-top: 40px;
+        font-size: 230%;
+        margin-bottom: 25px;
     }
 
     .fiche1, .fiche2 {
         border-radius: 40px;
+        padding: 8px;
     }
 
     .fiche1 {
@@ -617,21 +684,22 @@ footer li {
 
     .fiche2 .view {
         border-top-left-radius: 35px; 
-        border-bottom-left-radius: 35px; 
+        border-bottom-left-radius: 35px;
+        aspect-ratio: 18/19;
     }
 
-    .tag1 h3, .tag1 p, .tag2 p {
+    .tag1 p, .tag2 p {
         margin-bottom: 10px;
-        font-size: 260%;
+        font-size: 220%;
     }
 
-    .tag2 h3 {
-        font-size: 300%;
-        padding-bottom: 10px;
+    .tag1 h3, .tag2 h3 {
+        font-size: 260%;
+        padding-bottom: 0px;
     }
 
     .tag1, .tag2 {
-        padding: 30px;
+        padding: 20px;
     }
 
     #more {
@@ -642,40 +710,68 @@ footer li {
     /* Activity */
 
     .fiche3, .fiche4, .fiche5, .fiche6, .fiche7 {
-        border-radius: 50px;
+        border-radius: 20px;
     }
 
     .tag3 {
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         padding: 35px;
-        font-size: 250%;
+        font-size: 210%;
     }
 
     .fiche3 .view, .fiche4 .view, .fiche5 .view, .fiche6 .view, .fiche7 .view {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
-        aspect-ratio: 27/9;
+        aspect-ratio: 22/9;
     }
 
     #container_activity .part, #container_activity .part2 {
         gap: 40px;
     }
 
+    #container_activity {
+        margin-top: 40px;
+    }
+
+    #container_activity .box {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    #container_activity h2 {
+        margin-bottom: 45px;
+    }
+
 
     footer {
         gap: 50px;
+        padding-top: 80px;
     }
 
     footer h4, footer li {
-        font-size: 250%;
+        font-size: 260%;
         margin-bottom: 20px;
     }
 
 }
 
+    /** TABLET **/
 
 @media screen and (max-width: 992px)
 {
-    /* Rédigez vos propriétés CSS ici */
+    .fiche1 .view {
+        aspect-ratio: 13 / 9;
+    }
+
+    .filter-item {
+        padding-right: 0px;
+    }
+
+    .fiche3 .view {
+        aspect-ratio: 15/19;
+    }
+
+    footer h4 {
+        margin-right: 180px;
 }
