@@ -158,6 +158,7 @@ input {
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .search-bar i {
@@ -204,8 +205,8 @@ input {
 }
 
 .filter-item a:hover {
-    background-color: d9d9d9;
-    filter: drop-shadow(5px 10px 10px #e4e3e3)
+    background-color: #d9d9d9;
+    filter: drop-shadow(5px 10px 10px #d9d9d9)
 }
 
 .filter-item i {
@@ -436,7 +437,7 @@ input {
 }
 
 .fiche3 .view {
-    aspect-ratio: 16/19;
+    aspect-ratio: 17/19;
 }
 
 .fiche4 .view {
@@ -452,7 +453,7 @@ input {
 }
 
 .fiche7 .view {
-    aspect-ratio: 18/25;
+    aspect-ratio: 21/25;
 }
 
 
@@ -772,6 +773,10 @@ footer li {
         aspect-ratio: 15/19;
     }
 
+    .fiche7 .view {
+        aspect-ratio: 19/25;
+    }
+
     footer h4 {
         margin-right: 180px;
     }
@@ -802,6 +807,10 @@ footer li {
 
     .fiche6 .view {
         aspect-ratio: 16/9;
+    }
+
+    .fiche7 .view {
+        aspect-ratio: 19/25;
     }
 
     footer h4 {
