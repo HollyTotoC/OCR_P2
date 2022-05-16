@@ -20,7 +20,6 @@ Charte couleur:
 
 
 html {
-    max-width: 100%;
     font-family: 'Raleway';
     font-size: 12px;
 }
@@ -466,13 +465,12 @@ footer {
     padding-top: 30px;
     padding-left: 40px;
     padding-bottom: 30px;
-    gap: 20px;
+    gap: 160px;
+
 }
 
 footer h4 {
-    min-width: 100%;
     padding-bottom: 15px;
-    margin-right : 300px;
     font-size: 120%;
     font-weight: bold;
 }
@@ -485,14 +483,76 @@ footer li {
 
 /*! BREAKPOINT !*/
 
+
+    /** TABLET **/
+
+    @media screen and (max-width: 992px)
+    {
+
+        .fiche1 .view {
+            aspect-ratio: 13 / 9;
+        }
+    
+        .filter-item {
+            padding-right: 0px;
+        }
+    
+        .fiche3 .view {
+            aspect-ratio: 15/19;
+        }
+    
+        .fiche7 .view {
+            aspect-ratio: 19/25;
+        }
+    
+    }
+    
+    @media screen and (min-width: 1300px)
+    {
+        html {
+            font-size: 15px;
+        }
+        
+        .search-bar {
+            width: 500px;
+            height: 50px;
+        }
+    
+        .filter-item i {
+            padding: 25px;
+        }
+    
+        #container_activity .box {
+            gap: 60px;
+        }
+    
+        .fiche5 .view {
+            aspect-ratio: 15/6;
+        }
+    
+        .fiche6 .view {
+            aspect-ratio: 16/9;
+        }
+    
+        .fiche7 .view {
+            aspect-ratio: 19/25;
+        }
+    
+        footer {
+            gap: 300px;
+        }
+
+    }
+
+
+
     /** PHONE **/
 
 @media all and (max-width: 768px)
 {
 
     .title {
-        font-size: 340%;
-        text-shadow: 1px 0 #000000;
+        font-size: 190%;
     }
 
     
@@ -502,18 +562,21 @@ footer li {
         justify-content: center;
     }
     
+    #search-box {
+        margin: 0 10px;
+    }
+
     /* Header */
 
     header {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 
     #search-box, #container_activity {
-        padding: 30px;
+        padding: 10px;
     }
 
     #logo-home {
-        margin: 15px;
         display: flex;
         justify-content: center;
     }
@@ -529,35 +592,37 @@ footer li {
     .nav-link {
         justify-content: center;
         width: 100%;
-        padding: 20px;
-        border-bottom: 7px solid #F2F2F2;
+        border-bottom: 4px solid #F2F2F2;
     }
     
     .nav-link:hover {
-        border-bottom: 7px solid #0065FC;
+        border-bottom: 4px solid #0065FC;
         border-top: 0px;
         color: #0065FC;
     }
     
+    a.nav-link {
+        padding: 15px;
+    }
+
     nav {
         flex-grow: 1;
-        font-size: 210%;
+        font-size: 110%;
     }
 
 
     /* Search */ 
 
     .search-text p {
-        margin-top: 22px;
-        margin-bottom: 60px;
-        font-size: 250%;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        font-size: 140%;
     }
 
     .search-bar {
-        margin-top: 60px;
         width: 100%;
-        height: 90px;
-        border-radius: 30px;
+        height: 50px;
+        border-radius: 15px;
     }
 
     #search-btn {
@@ -565,37 +630,38 @@ footer li {
     }
     
     #glass {
-        border-radius: 30px;
+        border-radius: 15px;
         display: block;
+        font-size: 140%
     }
 
     .search-bar i {
-        font-size: 300%;
-        padding: 26px;
+        font-size: 160%;
+        padding: 18px;
     }
 
     #location {
-        font-size: 300%;
+        font-size: 150%;
     }
     
     /* Filtres */*
 
     #filter {
-        margin-top: 45px;
+        margin-top: 35px;
     }
     
     .filter-container {
         align-items: flex-start;
-        gap: 20px;
+        gap: 10px;
     }
     
     .filter-container h6 {
-        font-size: 300%;
-        margin-bottom: 15px;
+        font-size: 150%;
+        margin-bottom: 5px;
     }
     
     .filter-container li {
-        font-size: 270%;
+        font-size: 130%;
     }
     
     .filter-item {
@@ -605,39 +671,40 @@ footer li {
     .filter-item i {
         border-radius: 50%;
         font-size: 120%;
-        padding : 23px;
+        padding : 13px;
     }
 
     .filter-item a {
-        padding-right: 30px;
-        border-top: 4px solid #d9d9d9;
-        border-bottom: 4px solid #d9d9d9;
-        border-right: 4px solid #d9d9d9;
+        padding-right: 15px;
+        border-top: 2px solid #d9d9d9;
+        border-bottom: 2px solid #d9d9d9;
+        border-right: 2px solid #d9d9d9;
     
     }
 
 
     #result-info  {
         align-items: baseline;
-        margin-top: 60px;
+        margin-top: 30px;
         margin-bottom: 35px;
-        font-size: 240%;
+        font-size: 120%;
     }
 
     #result-info i {
         font-weight: bold;
-        font-size: 80%;
-        padding: 9px;
-        padding-left: 16px;
-        padding-right: 16px;
+        font-size: 90%;
+        padding: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
         border-radius: 100px;
         text-shadow: 1px 0 #0065FC;
+        border: 1px solid #d9d9d9;
     }
 
     /* Housing */
 
     .star {
-        font-size: 170%;
+        font-size: 90%;
     }
 
     #container_housing {
@@ -646,31 +713,40 @@ footer li {
 
     #housing, #popularity {
         width: auto;
-        border-radius: 0;
+        border-radius: 0px;
     } 
+    
+    #housing-result {
+        gap: 10px;
+    }
 
     #housing {
         background-color: white;
-        margin-top: 40px;
+        margin-top: 5px;
     }
 
     #housing h2 {
-        margin-bottom: 25px;
+        margin-bottom: 0px;
+        font-size: 170%
     }
 
     #popularity {
-        padding-bottom: 60px;
+        padding-bottom: 35px;
     }
     
     #popularity .pt {
-        padding-top: 40px;
-        font-size: 230%;
-        margin-bottom: 25px;
+        padding-top: 15px;
+        font-size: 120%;
+        margin-bottom: 5px;
+    }
+
+    #ficheb {
+        gap: 10px;
     }
 
     .fiche1, .fiche2 {
-        border-radius: 40px;
-        padding: 8px;
+        border-radius: 20px;
+        padding: 5px;
     }
 
     .fiche1 {
@@ -678,142 +754,89 @@ footer li {
     }
 
     .fiche1 .view {
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
-        aspect-ratio: 27 / 9;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        aspect-ratio: 25 / 9;
     }
 
     .fiche2 .view {
-        border-top-left-radius: 35px; 
-        border-bottom-left-radius: 35px;
+        border-top-left-radius: 15px; 
+        border-bottom-left-radius: 15px;
         aspect-ratio: 18/19;
     }
 
     .tag1 p, .tag2 p {
-        margin-bottom: 10px;
-        font-size: 220%;
+        margin-bottom: 5px;
+        font-size: 110%;
     }
 
     .tag1 h3, .tag2 h3 {
-        font-size: 260%;
-        padding-bottom: 0px;
+        font-size: 130%;
+        padding-bottom: 5px;
     }
-
-    .tag1, .tag2 {
-        padding: 20px;
+    
+    .tag2 {
+    padding: 5px 10px;
     }
-
+    
+    .tag1 {
+        padding: 5px 10px;
+    }
+    
     #more {
         margin-top: 30px;
-        font-size: 280%;
+        font-size: 160%;
     }
 
     /* Activity */
 
     .fiche3, .fiche4, .fiche5, .fiche6, .fiche7 {
-        border-radius: 20px;
+        border-radius: 15px;
     }
 
     .tag3 {
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        padding: 35px;
-        font-size: 210%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 15px;
+        font-size: 120%;
     }
 
     .fiche3 .view, .fiche4 .view, .fiche5 .view, .fiche6 .view, .fiche7 .view {
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        aspect-ratio: 22/9;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        aspect-ratio: 23/9;
     }
 
     #container_activity .part, #container_activity .part2 {
-        gap: 40px;
+        gap: 20px;
     }
 
     #container_activity {
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     #container_activity .box {
-        gap: 40px;
-        margin-bottom: 60px;
+        gap: 20px;
+        margin-bottom: 40px;
     }
 
     #container_activity h2 {
-        margin-bottom: 45px;
+        margin-bottom: 30px;
     }
 
 
     footer {
-        gap: 50px;
-        padding-top: 80px;
-    }
-
-    footer h4, footer li {
-        font-size: 260%;
-        margin-bottom: 20px;
-    }
-
-}
-
-    /** TABLET **/
-
-@media screen and (max-width: 992px)
-{
-    .fiche1 .view {
-        aspect-ratio: 13 / 9;
-    }
-
-    .filter-item {
-        padding-right: 0px;
-    }
-
-    .fiche3 .view {
-        aspect-ratio: 15/19;
-    }
-
-    .fiche7 .view {
-        aspect-ratio: 19/25;
+        gap: 30px;
+        padding-top: 40px;
     }
 
     footer h4 {
-        margin-right: 180px;
-    }
-}
-
-@media screen and (min-width: 1300px)
-{
-    html {
-        font-size: 18px;
+        font-size: 150%;
+        margin-bottom: 5px;
     }
     
-    .search-bar {
-        width: 500px;
-        height: 50px;
-    }
-
-    .filter-item i {
-        padding: 25px;
-    }
-
-    #container_activity .box {
-        gap: 60px;
-    }
-
-    .fiche5 .view {
-        aspect-ratio: 15/6;
-    }
-
-    .fiche6 .view {
-        aspect-ratio: 16/9;
-    }
-
-    .fiche7 .view {
-        aspect-ratio: 19/25;
-    }
-
-    footer h4 {
-        margin-right: 400px;
+    footer li {
+        font-size: 130%;
+        margin-bottom: 10px;
     }
 }
